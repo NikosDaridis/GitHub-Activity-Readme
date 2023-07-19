@@ -1585,7 +1585,7 @@ module.exports = (function (modules, runtime) {
 			};
 
 			const timestamper = item =>
-				`\`[${item.created_at.split("T")[0].split("-").slice(1, 3).join("/")} ${item.created_at
+				`\`[${item.created_at.split("T")[0].split("-").slice(1, 3).reverse().join("/")} ${item.created_at
 					.split("T")[1]
 					.split(":")
 					.slice(0, 2)
